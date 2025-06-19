@@ -11,8 +11,8 @@ services:
 
   nginx:
     build:
-      context: .
-      dockerfile: ./proxy/Dockerfile.nginx
+      context: ./proxy
+      dockerfile: Dockerfile.nginx
     ports:
       - "80:80"
     depends_on:
