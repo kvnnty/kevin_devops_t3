@@ -1,0 +1,15 @@
+{
+  "name": "devops-express",
+  "version": "1.0.0",
+  "description": "Devops practical exam",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "Kevin Tuyizere",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

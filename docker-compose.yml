@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  express-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    container_name: express-app
+
+  nginx:
+    build:
+      context: .
+      dockerfile: ./proxy/Dockerfile.nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - express-app
+    container_name: nginx-proxy
